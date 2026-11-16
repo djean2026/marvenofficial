@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Component, useEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { PublicLayout } from "./components/Layout";
 import { Home } from "./pages/Home";
@@ -37,9 +37,31 @@ function ScrollManager() {
   return null;
 }
 
+class PageBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="banner">
+          <p>This page hit a problem while loading. Refresh to try again.</p>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   return (
-    <>
+    <PageBoundary>
       <ScrollManager />
       <Routes>
         <Route path="/admin/login" element={<Login />} />
@@ -67,6 +89,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </>
+    </PageBoundary>
   );
 }
