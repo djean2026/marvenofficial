@@ -1,0 +1,254 @@
+{
+  "site": {
+    "id": 1,
+    "artistName": "Marven Jean",
+    "tagline": "Instrumental jazz, written at the piano.",
+    "heroKicker": "New single · Make it Happen",
+    "shortBio": "Pianist and jazz composer. Marven Jean writes instrumental music for the hour after the room goes quiet.",
+    "bio": "Marven Jean is a pianist and jazz composer. The music is instrumental: the piano in front, harmony that takes the long way around a melody, and arrangements built to stand without a lyric.\n\nThe writing sits with jazz standards and hymns carried back to the keyboard — familiar lines, new voicings, the left hand keeping time. Make it Happen is the new single. Beautiful Love, No One Ever Cared Like Jesus, and Il me conduit sit beside it.\n\nOn stage it is the piano, close enough to hear the hammers. The next rooms are Jacmel, Jeremie, Les Cayes, and Cap Haitien. If you stay after the last chord, Marven Jean usually stays too.",
+    "location": "Port-au-Prince",
+    "email": "hello@marvenofficial.com",
+    "bookingEmail": "booking@marvenofficial.com",
+    "instagram": "https://www.instagram.com/marven.jean/",
+    "facebook": "https://www.facebook.com/marven.jean.35",
+    "tiktok": "https://www.tiktok.com/@marvenofficial",
+    "youtube": "https://www.youtube.com/channel/UCMWOA2nu0JMo8mDatujJhEg",
+    "spotify": "https://open.spotify.com/search/Marven%20Jean",
+    "appleMusic": "https://music.apple.com/us/search?term=Marven%20Jean",
+    "soundcloud": "https://soundcloud.com/search?q=Marven%20Jean",
+    "heroImage": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=2200&q=80",
+    "portraitImage": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=80",
+    "newsletterNote": "New music, show dates, and the occasional note from the piano. No clutter."
+  },
+  "releases": [
+    {
+      "id": 1,
+      "title": "Make it Happen",
+      "type": "Single",
+      "releaseDate": "2026-11-06",
+      "coverImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80",
+      "description": "The new single.",
+      "tracklist": "Make it Happen",
+      "spotifyUrl": "https://open.spotify.com/search/Marven%20Jean%20Make%20it%20Happen",
+      "appleUrl": "https://music.apple.com/us/search?term=Marven%20Jean%20Make%20it%20Happen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TBEPBIZq2vI",
+      "featured": true,
+      "createdAt": "2026-11-16T19:10:01.179Z"
+    },
+    {
+      "id": 2,
+      "title": "Beautiful Love",
+      "type": "EP",
+      "releaseDate": "2026-06-20",
+      "coverImage": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1400&q=80",
+      "description": "The standard, played as instrumental jazz. The melody stays in the open and the harmony takes its time.",
+      "tracklist": "Beautiful Love",
+      "spotifyUrl": "https://open.spotify.com/search/Marven%20Jean%20Beautiful%20Love",
+      "appleUrl": "https://music.apple.com/us/search?term=Marven%20Jean%20Beautiful%20Love",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jfgolSWPWj4",
+      "featured": false,
+      "createdAt": "2026-11-16T19:10:01.179Z"
+    },
+    {
+      "id": 3,
+      "title": "No One Ever Cared Like Jesus",
+      "type": "Single",
+      "releaseDate": "2025-11-14",
+      "coverImage": "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=1400&q=80",
+      "description": "The hymn set for solo piano. No vocal line — the changes carry it.",
+      "tracklist": "No One Ever Cared Like Jesus",
+      "spotifyUrl": "https://open.spotify.com/search/Marven%20Jean%20No%20One%20Ever%20Cared%20Like%20Jesus",
+      "appleUrl": "https://music.apple.com/us/search?term=Marven%20Jean%20No%20One%20Ever%20Cared%20Like%20Jesus",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R3LrgrPXals",
+      "featured": false,
+      "createdAt": "2026-11-16T19:10:01.179Z"
+    },
+    {
+      "id": 4,
+      "title": "Il me conduit",
+      "type": "Album",
+      "releaseDate": "2025-04-02",
+      "coverImage": "https://images.unsplash.com/photo-1459749411174-04c53bf479b0?auto=format&fit=crop&w=1400&q=80",
+      "description": "Il me conduit, arranged for piano. The melody leads and the left hand answers.",
+      "tracklist": "Il me conduit",
+      "spotifyUrl": "https://open.spotify.com/search/Marven%20Jean%20Il%20me%20conduit",
+      "appleUrl": "https://music.apple.com/us/search?term=Marven%20Jean%20Il%20me%20conduit",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EvcQ-FaoSD8",
+      "featured": false,
+      "createdAt": "2026-11-16T19:10:01.179Z"
+    }
+  ],
+  "videos": [
+    {
+      "id": 5,
+      "title": "Marven Jean — Interview | Make it Happen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3rx1-dyVJbk",
+      "youtubeId": "3rx1-dyVJbk",
+      "description": "Interview and Make it Happen.",
+      "featured": false,
+      "publishedAt": "2026-11-06",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 6,
+      "title": "Make it Happen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=TBEPBIZq2vI",
+      "youtubeId": "TBEPBIZq2vI",
+      "description": "The new single.",
+      "featured": true,
+      "publishedAt": "2026-10-02",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 7,
+      "title": "Amazing Grace",
+      "youtubeUrl": "https://www.youtube.com/watch?v=P1iqNg5Ez4E",
+      "youtubeId": "P1iqNg5Ez4E",
+      "description": "",
+      "featured": false,
+      "publishedAt": "2026-08-14",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 8,
+      "title": "Il me conduit / He Leadeth Me",
+      "youtubeUrl": "https://www.youtube.com/watch?v=EvcQ-FaoSD8",
+      "youtubeId": "EvcQ-FaoSD8",
+      "description": "",
+      "featured": false,
+      "publishedAt": "2026-06-20",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 9,
+      "title": "Beautiful Love",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jfgolSWPWj4",
+      "youtubeId": "jfgolSWPWj4",
+      "description": "",
+      "featured": false,
+      "publishedAt": "2026-04-11",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 10,
+      "title": "No One Ever Cared Like Jesus / Holy Holy Holy",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R3LrgrPXals",
+      "youtubeId": "R3LrgrPXals",
+      "description": "",
+      "featured": false,
+      "publishedAt": "2026-02-07",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    },
+    {
+      "id": 11,
+      "title": "It Could Happen to You",
+      "youtubeUrl": "https://www.youtube.com/watch?v=zViBHLlLH4g",
+      "youtubeId": "zViBHLlLH4g",
+      "description": "",
+      "featured": false,
+      "publishedAt": "2025-12-13",
+      "createdAt": "2026-11-16T19:23:58.496Z"
+    }
+  ],
+  "events": [
+    {
+      "id": 7,
+      "title": "Live",
+      "venue": "To be announced",
+      "city": "Jacmel",
+      "date": "2026-12-05",
+      "time": "8:00 PM",
+      "ticketUrl": "",
+      "soldOut": false,
+      "createdAt": "2026-11-16T19:23:58.498Z"
+    },
+    {
+      "id": 8,
+      "title": "Live",
+      "venue": "To be announced",
+      "city": "Jeremie",
+      "date": "2026-12-19",
+      "time": "8:00 PM",
+      "ticketUrl": "",
+      "soldOut": false,
+      "createdAt": "2026-11-16T19:23:58.498Z"
+    },
+    {
+      "id": 9,
+      "title": "Live",
+      "venue": "To be announced",
+      "city": "Les Cayes",
+      "date": "2027-01-17",
+      "time": "8:00 PM",
+      "ticketUrl": "",
+      "soldOut": false,
+      "createdAt": "2026-11-16T19:23:58.498Z"
+    },
+    {
+      "id": 10,
+      "title": "Live",
+      "venue": "To be announced",
+      "city": "Cap Haitien",
+      "date": "2027-02-07",
+      "time": "8:00 PM",
+      "ticketUrl": "",
+      "soldOut": false,
+      "createdAt": "2026-11-16T19:23:58.498Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Make it Happen is out",
+      "slug": "make-it-happen-is-out",
+      "excerpt": "The new single is out.",
+      "body": "Make it Happen is out today. It started as a sketch at the piano and refused to stay small.\n\nThe left hand found the time, the right hand kept the melody in the open, and the last pass got one more chorus of chords than planned. If it finds you late, that is when it was written.\n\nThank you for waiting on it. The next rooms are on the tour page.",
+      "coverImage": "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?auto=format&fit=crop&w=1600&q=80",
+      "published": true,
+      "createdAt": "2026-11-06T16:00:00.000Z",
+      "updatedAt": "2026-11-16T19:38:35.357Z"
+    },
+    {
+      "id": 2,
+      "title": "The long way through the tour",
+      "slug": "the-long-way-through-the-tour",
+      "excerpt": "Dates, vans, and the cities where the second chorus of chords got louder.",
+      "body": "The dates are up. The run moves through Jacmel, Jeremie, Les Cayes, and Cap Haitien.\n\nSoundcheck is at five when the room allows it. If you are coming early, the quiet pieces happen first. If you are coming late, stay for the last one anyway.\n\nTickets land city by city. If your town is missing, write — the list is not finished.",
+      "coverImage": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=1600&q=80",
+      "published": true,
+      "createdAt": "2026-10-28T15:00:00.000Z",
+      "updatedAt": "2026-11-16T19:38:35.358Z"
+    },
+    {
+      "id": 3,
+      "title": "What we played in the van",
+      "slug": "what-we-played-in-the-van",
+      "excerpt": "A short list from the miles between the last two rooms.",
+      "body": "The aux cord has a hierarchy. Up-tempo records win in the afternoon. Ballads win after midnight. Someone always puts on a piece we were trying not to be influenced by, and then we are.\n\nA few that stayed in the rotation: a hymn from childhood, a standard that keeps changing key, and a piano sketch that might be the next single.\n\nIf you have a song the van should hear, send it with the contact form. We actually read those.",
+      "coverImage": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1600&q=80",
+      "published": true,
+      "createdAt": "2026-09-14T18:00:00.000Z",
+      "updatedAt": "2026-11-16T19:38:35.358Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "A piano that stays in the room after the lights come up.",
+      "source": "Night Desk",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "quote": "Make it Happen sits in the hands — a line you mean to play once and then keep.",
+      "source": "The Late Set",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "quote": "Live, it is the piano, close enough to hear the hammers.",
+      "source": "City Pages",
+      "featured": false
+    }
+  ]
+}
