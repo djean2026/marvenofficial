@@ -33,8 +33,12 @@ export function Home() {
 
   if (state.loading) return <Loading />;
   if (state.error) return <ErrorNote onRetry={load}>{state.error}</ErrorNote>;
+  if (!state.data?.settings) {
+    return <ErrorNote onRetry={load}>The page couldn't read the site content.</ErrorNote>;
+  }
 
-  const { settings, release, events, video, posts, quotes } = state.data;
+  const { settings, release, video, posts, quotes } = state.data;
+  const events = state.data.events || [];
   const next = events[0];
   const line = `${settings.artistName}  ·  ${release?.title || "New music"}  ·  ${settings.location}  ·  Live  ·  `;
   const marquee = line.repeat(4);

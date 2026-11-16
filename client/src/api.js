@@ -1,3 +1,5 @@
+import { publishedContent } from "./catalog";
+
 export function getToken() {
   return localStorage.getItem("marven_token") || "";
 }
@@ -20,7 +22,17 @@ export function currentAdmin() {
   }
 }
 
+function savedContent(path) {
+  try {
+    return publishedContent(path);
+  } catch (error) {
+    if (error?.status) throw error;
+    return null;
+  }
+}
+
 export async function api(path, options = {}) {
+  const method = String(options.method || "GET").toUpperCase();
   const headers = new Headers(options.headers || {});
   if (options.body && !headers.has("Content-Type")) headers.set("Content-Type", "application/json");
   const token = getToken();
@@ -30,17 +42,34 @@ export async function api(path, options = {}) {
   try {
     response = await fetch(`/api${path}`, { ...options, headers });
   } catch {
+    if (method === "GET") {
+      const saved = savedContent(path);
+      if (saved) return saved;
+    }
     throw new Error("Can't reach the server. Start it with npm run dev.");
   }
 
   const text = await response.text();
-  let data = {};
+  let data = null;
+  let parsed = false;
   if (text) {
     try {
       data = JSON.parse(text);
+      parsed = true;
     } catch {
-      data = { error: text.slice(0, 180) };
+      parsed = false;
     }
+  } else {
+    parsed = true;
+    data = {};
+  }
+
+  if (!parsed) {
+    if (method === "GET") {
+      const saved = savedContent(path);
+      if (saved) return saved;
+    }
+    throw new Error("The site server didn't answer. This deploy is serving the saved pages only.");
   }
 
   if (response.status === 401 && path !== "/admin/login") {
