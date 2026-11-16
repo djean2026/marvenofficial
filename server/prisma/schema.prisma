@@ -1,0 +1,115 @@
+// SQLite keeps a musician site self-contained: one file, no database server.
+// To use Postgres instead, set provider to "postgresql", point DATABASE_URL
+// at your database, then run `npm run db:setup` from the server folder.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  name         String
+  createdAt    DateTime @default(now())
+}
+
+model Settings {
+  id             Int    @id @default(1)
+  artistName     String
+  tagline        String
+  heroKicker     String
+  shortBio       String
+  bio            String
+  location       String
+  email          String
+  bookingEmail   String
+  instagram      String
+  facebook       String   @default("")
+  tiktok         String
+  youtube        String
+  spotify        String
+  appleMusic     String
+  soundcloud     String
+  heroImage      String
+  portraitImage  String
+  newsletterNote String
+}
+
+model Release {
+  id          Int      @id @default(autoincrement())
+  title       String
+  type        String
+  releaseDate String
+  coverImage  String
+  description String
+  tracklist   String   @default("")
+  spotifyUrl  String   @default("")
+  appleUrl    String   @default("")
+  youtubeUrl  String   @default("")
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Video {
+  id          Int      @id @default(autoincrement())
+  title       String
+  youtubeUrl  String
+  youtubeId   String
+  description String   @default("")
+  featured    Boolean  @default(false)
+  publishedAt String
+  createdAt   DateTime @default(now())
+}
+
+model Event {
+  id        Int      @id @default(autoincrement())
+  title     String
+  venue     String
+  city      String
+  date      String
+  time      String   @default("")
+  ticketUrl String   @default("")
+  soldOut   Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Post {
+  id         Int      @id @default(autoincrement())
+  title      String
+  slug       String   @unique
+  excerpt    String
+  body       String
+  coverImage String   @default("")
+  published  Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Quote {
+  id       Int     @id @default(autoincrement())
+  quote    String
+  source   String
+  featured Boolean @default(false)
+}
+
+model Subscriber {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String
+  body      String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
